@@ -1,0 +1,61 @@
+.mobile,
+.tablet,
+.laptop,
+.largeScreen {
+  display: none;
+}
+body {
+  background-color: #00ffff;
+}
+h1 {
+  font-size: 3rem;
+  text-align: center;
+}
+.mobile,.laptop,.largeScreen,.tablet{
+    display: none;
+}
+@media screen and (min-width:0px)
+{
+    body{
+        background-color: #bd1818;
+    }
+    .mobile{
+        display: block;
+    }
+}
+@media screen and (min-width:425px)
+{
+    body{
+        background-color: #f38d09;
+    }
+    .mobile{
+        display: none;
+    }
+    .tablet{
+        display: block;
+    }
+}
+@media screen and (min-width:768px)
+{
+    body{
+        background-color: #f43737;
+    }
+    .tablet{
+        display: none;
+    }
+   .laptop{
+    display: block;
+   }
+}
+@media screen and (min-width:1024px)
+{
+    body{
+        background-color: #32dde9;
+    }
+    .laptop{
+        display: none;
+    }
+    .largeScreen{
+        display: block;
+    }
+}
